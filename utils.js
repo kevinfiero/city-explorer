@@ -17,10 +17,21 @@ function mungeLocation(location) {
 }
 
 function mungeWeather(weather) {
-    return {
-        forecast: weather.data[0].weather.description,
-        time: weather.data[0].datetime
-    }; 
+    
+    let data = [
+        {
+            forecast: weather.data[0].weather.description,
+            time: weather.data[0].datetime
+        },
+        {
+            forecast: weather.data[1].weather.description,
+            time: weather.data[1].datetime
+        }
+
+
+    ];
+    return data;
+
 }
 
 
