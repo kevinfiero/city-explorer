@@ -16,5 +16,12 @@ function mungeLocation(location) {
     }; 
 }
 
+function mungeWeather(weather) {
+    return {
+        forecast: weather.data.weather[0].weather.description,
+        time: weather.data[0].datetime
+    }; 
+}
 
-module.exports = { mungeMovie, mungeLocation };
+
+module.exports = { mungeMovie, mungeLocation, mungeWeather };
