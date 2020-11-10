@@ -31,7 +31,6 @@ describe('app routes', () => {
       const longitude = '-122.3300624'
 
       const URL = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${latitude}&lon=${longitude}&key=${process.env.WEATHER_KEY}`
-      console.log(URL);
       const response = await request.get(URL);
       const mungedData = mungeWeather(response.body);
 
