@@ -45,7 +45,7 @@ function mungeReviews(reviews) {
             rating: item.rating,
             url: item.url
         };
-    });
+    }).slice(0,20);
 }
 
 module.exports = { mungeLocation, mungeWeather, mungeTrails, mungeReviews };
