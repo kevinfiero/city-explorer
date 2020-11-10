@@ -16,5 +16,32 @@ function mungeLocation(location) {
     }; 
 }
 
+function mungeWeather(weather) {
+    
+    return weather.data.map(item=> {
+        return {
+            forecast: item.weather.description,
+            time: item.datetime
+        };
+    }).slice(0,8);
+}
 
-module.exports = { mungeMovie, mungeLocation };
+function mungeTrails(trails) {
+    
+    return trails.trails.map(item=> {
+        return {
+            name: item.name,
+            location: item.location,
+            length: item.length,
+            stars: item.stars,
+            star_votes: item.starVotes,
+            summary: item.summary,
+            trail_url: item.url,
+            conditions: item.conditionDetails,
+            condition_date: item.conditionDate.split(' ')[0],
+            condition_time: item.conditionDate.split(' ')[1]
+        };
+    });
+}
+
+module.exports = { mungeMovie, mungeLocation, mungeWeather, mungeTrails };
