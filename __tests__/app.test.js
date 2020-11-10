@@ -1,9 +1,10 @@
 require('dotenv').config();
 const request = require('superagent');
-const { mungeLocation, mungeWeather, mungeTrails } = require('../utils.js');
+const { mungeLocation, mungeWeather, mungeTrails, mungeReviews } = require('../utils.js');
 const locationTestData = require('../data/locations.js');
 const weatherTestData = require('../data/weather.js');
 const trailsTestData = require('../data/trails.js');
+const reviewsTestData = require('../data/reviews.js');
 
 
 describe('app routes', () => {
@@ -30,6 +31,7 @@ describe('app routes', () => {
       const longitude = '-122.3300624'
 
       const URL = `https://api.weatherbit.io/v2.0/forecast/daily?&lat=${latitude}&lon=${longitude}&key=${process.env.WEATHER_KEY}`
+      console.log(URL);
       const response = await request.get(URL);
       const mungedData = mungeWeather(response.body);
 
@@ -49,5 +51,21 @@ describe('app routes', () => {
 
       expect(mungedData).toEqual(expectation);
     });
+
+    test('test mungeReviews function', async() => {
+
+      const expectation = reviewsTestData;
+
+      const latitude = '47.6038321'
+      const longitude = '-122.3300624'
+
+      const URL = `https://api.yelp.com/v3/businesses/search?latitude=${latitude}&longitude=${longitude}`
+      const response = await request.get(URL).set('Authorization', `Bearer ${process.env.YELP_KEY}`);
+      const mungedData = mungeReviews(response.body);
+
+      expect(mungedData).toEqual(expectation);
+    });
+
+
   })
 });
