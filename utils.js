@@ -18,20 +18,12 @@ function mungeLocation(location) {
 
 function mungeWeather(weather) {
     
-    let data = [
-        {
+    return weather.data.map(item=> {
+        return {
             forecast: weather.data[0].weather.description,
             time: weather.data[0].datetime
-        },
-        {
-            forecast: weather.data[1].weather.description,
-            time: weather.data[1].datetime
-        }
-
-
-    ];
-    return data;
-
+        };
+    }).slice(0,8);
 }
 
 
