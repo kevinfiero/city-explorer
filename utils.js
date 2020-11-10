@@ -20,8 +20,8 @@ function mungeWeather(weather) {
     
     return weather.data.map(item=> {
         return {
-            forecast: weather.data.weather.description,
-            time: weather.data.datetime
+            forecast: item.weather.description,
+            time: item.datetime
         };
     }).slice(0,8);
 }
