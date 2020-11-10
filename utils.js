@@ -32,7 +32,20 @@ function mungeTrails(trails) {
             condition_date: item.conditionDate.split(' ')[0],
             condition_time: item.conditionDate.split(' ')[1]
         };
+    }).slice(0,10);
+}
+
+function mungeReviews(reviews) {
+
+    return reviews.businesses.map(item=> {
+        return {
+            name: item.name,
+            image_url: item.image_url,
+            price: item.price,
+            rating: item.rating,
+            url: item.url
+        };
     });
 }
 
-module.exports = { mungeLocation, mungeWeather, mungeTrails };
+module.exports = { mungeLocation, mungeWeather, mungeTrails, mungeReviews };
