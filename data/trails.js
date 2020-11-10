@@ -1,0 +1,122 @@
+module.exports = [
+    {
+        "name": "Enchantments Traverse",
+        "location": "Leavenworth, Washington",
+        "length": 19.1,
+        "stars": 4.9,
+        "star_votes": 77,
+        "summary": "An extraordinary hike that takes you through all of the beauty that the Enchantments have to offer!",
+        "trail_url": "https://www.hikingproject.com/trail/7005246/enchantments-traverse",
+        "conditions": "Dry",
+        "condition_date": "2020-10-13",
+        "condition_time": "14:06:06"
+    },
+    {
+        "name": "Skyline Trail",
+        "location": "Eatonville, Washington",
+        "length": 5.3,
+        "stars": 4.8,
+        "star_votes": 97,
+        "summary": "A popular and easily accessible route, skirting the slopes of Mount Rainier and Paradise Glacier.",
+        "trail_url": "https://www.hikingproject.com/trail/7002140/skyline-trail",
+        "conditions": "Some Mud - foggy with some rain",
+        "condition_date": "2020-10-17",
+        "condition_time": "20:45:08"
+    },
+    {
+        "name": "Rattlesnake Ledge",
+        "location": "Riverbend, Washington",
+        "length": 4.3,
+        "stars": 4.4,
+        "star_votes": 133,
+        "summary": "An extremely popular out-and-back hike to the viewpoint on Rattlesnake Ledge.",
+        "trail_url": "https://www.hikingproject.com/trail/7021679/rattlesnake-ledge",
+        "conditions": "Dry",
+        "condition_date": "2020-09-07",
+        "condition_time": "16:58:30"
+    },
+    {
+        "name": "Mt. Si",
+        "location": "Tanner, Washington",
+        "length": 6.6,
+        "stars": 4.4,
+        "star_votes": 114,
+        "summary": "A steep, well-maintained trail takes you atop Mt. Si with outrageous views of Puget Sound.",
+        "trail_url": "https://www.hikingproject.com/trail/7001016/mt-si",
+        "conditions": "Some Mud",
+        "condition_date": "2020-11-06",
+        "condition_time": "15:39:58"
+    },
+    {
+        "name": "Twin Falls",
+        "location": "Riverbend, Washington",
+        "length": 2.3,
+        "stars": 4.3,
+        "star_votes": 70,
+        "summary": "A classic family-friendly route through old growth trees with a spectacular waterfall in the mix.",
+        "trail_url": "https://www.hikingproject.com/trail/7019080/twin-falls",
+        "conditions": "Some Mud",
+        "condition_date": "2020-11-06",
+        "condition_time": "13:44:50"
+    },
+    {
+        "name": "High Divide Loop",
+        "location": "Forks, Washington",
+        "length": 17.6,
+        "stars": 4.9,
+        "star_votes": 54,
+        "summary": "This loop is a superlative experience that you'll be eager to repeat.",
+        "trail_url": "https://www.hikingproject.com/trail/7002051/high-divide-loop",
+        "conditions": "Dry",
+        "condition_date": "2020-09-13",
+        "condition_time": "20:32:37"
+    },
+    {
+        "name": "Poo Poo Point via Chirico Trail",
+        "location": "Issaquah, Washington",
+        "length": 3.9,
+        "stars": 4.3,
+        "star_votes": 68,
+        "summary": "A great place for a picnic and watching paragliders!",
+        "trail_url": "https://www.hikingproject.com/trail/7005406/poo-poo-point-via-chirico-trail",
+        "conditions": "Mostly Dry",
+        "condition_date": "2020-10-16",
+        "condition_time": "15:24:28"
+    },
+    {
+        "name": "Heather/Maple Pass Loop",
+        "location": "Stehekin, Washington",
+        "length": 7.2,
+        "stars": 4.9,
+        "star_votes": 46,
+        "summary": "The best day hike in the area for fantastic panoramic views!",
+        "trail_url": "https://www.hikingproject.com/trail/7013152/heathermaple-pass-loop",
+        "conditions": "Snowy, Some Mud, Icy",
+        "condition_date": "2020-11-01",
+        "condition_time": "22:15:42"
+    },
+    {
+        "name": "Colchuck Lake",
+        "location": "Leavenworth, Washington",
+        "length": 8.3,
+        "stars": 4.8,
+        "star_votes": 42,
+        "summary": "A very popular trail leading to a glacially carved alpine lake in the beautiful Enchantments.",
+        "trail_url": "https://www.hikingproject.com/trail/7026025/colchuck-lake",
+        "conditions": "",
+        "condition_date": "2020-09-07",
+        "condition_time": "17:28:03"
+    },
+    {
+        "name": "Mailbox Peak Trail",
+        "location": "Riverbend, Washington",
+        "length": 9.7,
+        "stars": 4.5,
+        "star_votes": 52,
+        "summary": "An infamous (easier) hike with a mailbox (maintained by volunteers) at the top!",
+        "trail_url": "https://www.hikingproject.com/trail/7005408/mailbox-peak-trail",
+        "conditions": "",
+        "condition_date": "2020-08-22",
+        "condition_time": "15:00:37"
+    }
+];
