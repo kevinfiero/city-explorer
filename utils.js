@@ -27,7 +27,7 @@ function mungeWeather(weather) {
 }
 
 function mungeTrails(trails) {
-    console.log(trails)
+    
     return trails.trails.map(item=> {
         return {
             name: item.name,
@@ -41,7 +41,7 @@ function mungeTrails(trails) {
             condition_date: item.conditionDate.split(' ')[0],
             condition_time: item.conditionDate.split(' ')[1]
         };
-    }).slice(0,8);
+    });
 }
 
 module.exports = { mungeMovie, mungeLocation, mungeWeather, mungeTrails };
